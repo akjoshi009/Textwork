@@ -1,14 +1,12 @@
-import docx2txt
-docx2txt.process(r"D:\Sachin\Data Science Challenges\Docxtotext\file-sample_1MB.docx", r'D:\Sachin\Data Science Challenges\Docxtotext\images') 
+@postmethod
+def getfile(request):
+    data["filename"]=request.file()
+    pass this file to gettext
+    copy paste here 
+    return jsonvariable  
+    
 
 
-def writetables(doc):
-    tables2 = []
-    for table in document.tables:
-        df = [['' for i in range(len(table.columns))] for j in range(len(table.rows))]
-        for i, row in enumerate(table.rows):
-            for j, cell in enumerate(row.cells):
-                if cell.text:
-                    df[i][j] = cell.text
-    tables2.append(pd.DataFrame(df))
-    return tables2
+def gettext():
+ paste function here
+
