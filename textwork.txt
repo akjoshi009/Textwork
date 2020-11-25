@@ -1,12 +1,9 @@
-@postmethod
-def getfile(request):
-    data["filename"]=request.file()
-    pass this file to gettext
-    copy paste here 
-    return jsonvariable  
-    
-
-
-def gettext():
- paste function here
+import re
+html = mammoth.convert_to_html(filehere).value
+tags = re.findall('&quot;<strong>(.*?)<\/strong>&quot;', html)
+print(tags)
+count=0
+for i in tags:
+    gettext(doc,tags[count],tags[count+1],filename)
+    count=count+1
 
